@@ -67,7 +67,7 @@ async function fetchIPAndGeoLocation() {
 
     // Obtener geolocalización por IP (gratuito, sin API key)
     const geoResponse = await fetch(
-      `http://ip-api.com/json/${deviceData.ip}?fields=status,country,regionName,city,isp`
+      `https://ip-api.com/json/${deviceData.ip}?fields=status,country,regionName,city,isp`
     );
     const geoData = await geoResponse.json();
 
